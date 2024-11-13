@@ -1,0 +1,98 @@
+/* Profile Container */
+.profile-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Style */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 15px; /* Added space between items */
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li:hover {
+    background-color: #444;
+}
+
+/* Highlight active navbar item */
+.sidebar nav ul li.active {
+    background-color: #555;
+}
+
+/* Profile Content Style */
+.profile-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color:white;
+    overflow-y: auto;
+}
+
+/* Section Styling */
+.section-content {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Section content without white background */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+   
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section content styling */
+ul li p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile-content {
+        padding: 10px;
+    }
+}

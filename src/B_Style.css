@@ -1,0 +1,55 @@
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 20px;
+    text-align: center;
+    border: 3px solid rgb(241, 241, 241);
+}
+th {
+    background-color: #1e1e1e;
+}
+.available {
+    background-color: orange; /* Available cells */
+    cursor: pointer;
+}
+.booked {
+    background-color: gray; /* Booked cells */
+}
+.selected {
+    background-color: blue; /* Change color to blue when selected */
+}
+button.book-button{
+    background-color: #1e1e1e;
+    color: #ffffff;
+   border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: gray;
+}
+select, input[type="date"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: large;
+    background-color: #6e6e6e;
+    margin-top: 10px;
+}
+.booking {
+    display: flex;
+    gap: 50px;
+}
+.total-price {
+    margin-top: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
